@@ -42,3 +42,12 @@ time.sleep(3)
 answers_link = "https://www.quora.com/" + parameters["user_name"]
 driver.get(answers_link)                                                        
 time.sleep(2)
+
+# Let's retrieve the whole page so that you don't miss a single answer
+while 1:
+        a = driver.execute_script("return document.body.scrollHeight;")
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        b = driver.execute_script("return document.body.scrollHeight;")
+        if a==b:
+
+                break
