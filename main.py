@@ -1,9 +1,9 @@
 __author__ = "Shantam Mathuria"
-__copyright__ = "Copyright 2018, The Cogent Project"
+__copyright__ = "Don't steal bitches"
 __credits__ = ["Shantam Mathuria"]
-__license__ = "GPL"
+__license__ = "None of your business"
 __version__ = "1.0.1"
-__maintainer__ = "Shantam Mathuria"
+__maintainer__ = "Ofc Me"
 __email__ = "shantam.m22@gmail.com"
 __status__ = "Production"
 
