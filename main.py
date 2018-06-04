@@ -23,3 +23,8 @@ for section_name in par.sections():
         # Parsing the configuration file and reading it into the dict
         for name, value in par.items(section_name):
                 parameters[name] = value
+                
+# Automating your browser 
+driver = webdriver.Chrome('chromedriver.exe')
+driver.get("https://www.quora.com")
+time.sleep(3)
