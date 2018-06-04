@@ -49,5 +49,14 @@ while 1:
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         b = driver.execute_script("return document.body.scrollHeight;")
         if a==b:
-
                 break
+                
+# Time to upvote the answers ;)                                  
+driver.execute_script("window.a = document.getElementsByClassName('icon_action_bar-button blue_icon');")
+
+# Retrieving all the upvote items in an array
+driver.execute_script("for(var i=0; i<a.length; i++) { a[i].click(); }")
+
+# Clicking on each and every item one by one
+print('All answers upvoted :D\n')
+                
