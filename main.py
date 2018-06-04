@@ -28,3 +28,12 @@ for section_name in par.sections():
 driver = webdriver.Chrome('chromedriver.exe')
 driver.get("https://www.quora.com")
 time.sleep(3)
+
+# Filling the login credentials
+form = driver.find_element_by_class_name('regular_login')
+email = form.find_element_by_name("email")
+email.send_keys(parameters["email_id"])
+password = form.find_element_by_name("password")
+password.send_keys(parameters["pass_word"])
+password.send_keys(Keys.RETURN)
+time.sleep(3)       
