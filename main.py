@@ -37,3 +37,8 @@ password = form.find_element_by_name("password")
 password.send_keys(parameters["pass_word"])
 password.send_keys(Keys.RETURN)
 time.sleep(3)       
+
+# Getting to other user's link ;) 
+answers_link = "https://www.quora.com/" + parameters["user_name"]
+driver.get(answers_link)                                                        
+time.sleep(2)
