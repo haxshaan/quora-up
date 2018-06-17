@@ -1,5 +1,5 @@
 __author__ = "Shantam Mathuria"
-__copyright__ = "Copyright 2018, The Cogent Project"
+__copyright__ = "Copyright 2018"
 __credits__ = ["Shantam Mathuria"]
 __license__ = "GPL"
 __version__ = "1.0.1"
@@ -47,7 +47,7 @@ def main(u, p):
     # Automating your browser
     driver = webdriver.Chrome('chromedriver.exe')
     driver.get("https://www.quora.com")
-    time.sleep(3)
+    time.sleep(1)
 
     # Filling the login credentials
     form = driver.find_element_by_class_name('regular_login')
